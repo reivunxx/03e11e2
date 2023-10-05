@@ -61,3 +61,16 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.mobileTitle{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #C7CDD9;
+  text-align: left;
+
+
+  @media (min-width:  $bp1) {
+    display: none;
+  }
+}

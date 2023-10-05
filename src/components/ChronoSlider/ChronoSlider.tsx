@@ -70,11 +70,7 @@ const ChronoSlider: FC = () => {
                     </motion.div>
                 }
             </AnimatePresence>
-            <div className={`${s.mobileTitle} ${f.dotHeader}`}>
-                {
-                    activePeriod.title
-                }
-            </div>
+
         </div>
     </div>
 }

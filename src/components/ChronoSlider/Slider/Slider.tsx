@@ -2,7 +2,7 @@ import s from './Slider.module.scss'
 import f from '../../../utils/fonts.module.scss'
 
 import {periodType} from "../ChronoSlider";
-import {FC, useRef, useState} from "react";
+import React, {FC, useRef, useState} from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Swiper as SwiperType} from 'swiper/types'
 import {ReactComponent as ArrowIcon} from "./arrow.svg";
@@ -17,6 +17,11 @@ const Slider: FC<ISlider> = ({data}) => {
     const [isStart, setIsStart] = useState<boolean>(false);
 
     return <>
+        <div className={`${s.mobileTitle} ${f.dotHeader}`}>
+            {
+                data.title
+            }
+        </div>
         <Swiper
             spaceBetween={24}
             slidesPerView={'auto'}
