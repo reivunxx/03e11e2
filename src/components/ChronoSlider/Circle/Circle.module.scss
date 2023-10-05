@@ -1,0 +1,90 @@
+@import "src/utils/colors";
+@import "src/utils/breakpoints";
+
+.wrap {
+  width: 33.125rem;
+  height: 33.125rem;
+  position: relative;
+  transition: .3s;
+
+  @media (max-width: $bp1) {
+    display: none;
+  }
+}
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid $dark;
+  opacity: .2;
+  height: 100%;
+  width: 100%;
+}
+
+.dotWrap{
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+
+  transform-origin: center left;
+  transition: .7s;
+}
+
+.dot {
+  height: 3.5rem;
+  width: 3.5rem;
+
+  z-index: 3;
+  margin: -1.75rem;
+  position: absolute;
+  left: 100%;
+  cursor: pointer;
+
+  transition: .7s;
+
+  &:hover, &.active {
+    .dotLayout{
+      background: #F4F5F9;
+      transform: scale(1);
+    }
+  }
+
+  .dotLayout{
+    transition: .7s;
+    background: $dark;
+    transform: scale(.1072);
+    border-radius: 100%;
+
+    border: solid 1px #303E5880;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+
+
+
+  .dotTitle {
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: .75rem;
+    transition: .3s;
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+
+
+
+  &.active{
+    .dotTitle {
+      transform: translateX(0);
+      opacity: 1;
+      transition-delay: 1s;
+    }
+  }
+}

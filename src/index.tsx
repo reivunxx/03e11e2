@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './utils/globals.scss';
+import 'swiper/css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

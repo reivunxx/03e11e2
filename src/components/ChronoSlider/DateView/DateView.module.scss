@@ -1,0 +1,20 @@
+@import "src/utils/colors";
+@import "src/utils/breakpoints";
+
+.wrap{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  position: absolute;
+  @media (max-width: $bp1) {
+    position: relative;
+  }
+}
+
+.left{
+  color: $iris;
+}
+
+.right{
+  color: $pink
+}

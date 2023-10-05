@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap');
+
+@import "src/utils/colors";
+@import "src/utils/breakpoints";
+
+
+p, h1, h2, h3, span, {
+  font-family: "PT Sans", sans-serif;
+}
+
+.title{
+  color: $dark;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+
+  @media (max-width: $bp1) {
+    font-size: 1.25rem;
+  }
+}
+
+.dateBig{
+  font-size: 12.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10rem; /* 80% */
+  letter-spacing: -0.25rem;
+  
+  @media (max-width: $bp1) {
+    font-size: 3.5rem;
+    letter-spacing: -0.07rem;
+    line-height: normal;
+  }
+}
+
+.dateSmall{
+  color: $blue;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.875rem */
+  text-transform: uppercase;
+}
+
+.text{
+  color: $dark;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 150% */
+}
+
+.caption{
+  color: $dark;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dotHeader{
+  color: $dark;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem; /* 150% */
+}
+
+.dotCounter{
+  color: $dark;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 150% */
+}
