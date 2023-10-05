@@ -1,6 +1,6 @@
 import s from './DateView.module.scss'
 import f from '../../..//utils/fonts.module.scss'
-import {FC, useEffect, useState} from "react";
+import {FC} from "react";
 import CountUp from "react-countup";
 
 

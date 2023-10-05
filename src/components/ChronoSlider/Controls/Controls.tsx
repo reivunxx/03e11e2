@@ -38,6 +38,7 @@ const Controls: FC<IControls> = ({activePeriod, setActivePeriod}) => {
         <div className={s.mobileNavs}>
             {
                 periods.map((period, index) => <button
+                    key={index}
                     className={`${s.mobileNav} ${activePeriod === period ? s.active : ""}`}
                     onClick={() => setActivePeriod(period)}
                 ><span/></button>)
